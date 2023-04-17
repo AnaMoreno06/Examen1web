@@ -12,11 +12,11 @@ public class Conexion <T>{
     private static EntityManager em = null;
 
     public Conexion() {
-        em = this.getEm();
+        em = Conexion.getEm();
     }
 
     public Conexion(Class<T> c) {
-        em = this.getEm();
+        em = Conexion.getEm();
         this.c = c;
     }
 

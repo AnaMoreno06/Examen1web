@@ -1,17 +1,17 @@
 package co.examen.Test;
 
-import co.examen.DAO.UsuarioDAO;
-import co.examen.Entities.Usuario;
+import co.examen.DAO.PacienteDAO;
+import co.examen.Entities.Paciente;
 
 public class test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		UsuarioDAO sDao = new UsuarioDAO();
+		PacienteDAO sDao = new PacienteDAO();
 		
-		sDao.insert(new Usuario("prueba previo", "preuba@gmail.com"));
+		sDao.insert(new Paciente("prueba previo", "preuba@gmail.com"));
 		
-		for(Usuario s: sDao.list())
+		for(Paciente s: sDao.list())
 			System.out.println(s.toString());
 	}
 
